@@ -1,0 +1,13 @@
+<svg width="83" height="83" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="41.6216" cy="41.9715" rx="15.5005" ry="37.2557" stroke="#1CDCE3" stroke-width="2"/>
+<ellipse cx="41.6226" cy="41.9714" rx="15.5005" ry="37.2557" transform="rotate(60 41.6226 41.9714)" stroke="#1CDCE3" stroke-width="2"/>
+<ellipse cx="41.6221" cy="41.9716" rx="15.5005" ry="37.2557" transform="rotate(120 41.6221 41.9716)" stroke="#1CDCE3" stroke-width="2"/>
+<path d="M21 42H63V52H21V42Z" fill="white"/>
+<rect x="31" y="70" width="5" height="5" fill="white"/>
+<rect x="47" y="70" width="5" height="5" fill="white"/>
+<path d="M25.4054 16H58.5947L62 22.5V35.6159L58.5947 42H25.4054L22 35.6159V22.5L25.4054 16Z" fill="white"/>
+<path d="M28.311 20H55.689L58 24.1331V34.765L55.689 39H28.311L26 34.765V24.1331L28.311 20Z" fill="#B0A9A9"/>
+<path d="M24 45H59V66.8212L55.6388 71H27.3612L24 66.8212V45Z" fill="white"/>
+<path d="M55 51H29L32.0373 54H51.9627L55 51Z" fill="#B0A9A9"/>
+<path d="M30 30.1606H35.175L38.625 24L43.1205 34L46.1 28.4805H53" stroke="white" stroke-width="1.94"/>
+</svg>

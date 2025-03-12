@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>ALMYTECH</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"> -->
+
+
+
+
+  <!--Подключаем только глобальные стили и скрипты, все остальное в компонентах-->
+    <link rel="stylesheet" href="./css/libs.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="text/javascript" src="./js/libs/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery.transit.js"></script>
+    <script type="text/javascript" src="./js/libs/util.js"></script>
+    <script type="text/javascript" src="./js/libs/cleave.min.js"></script>
+    <script type="text/javascript" src="./js/libs/modal.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="./js/libs/swiper.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+
+
+  <body>
+    <header class="header header--mp js-header">
+      <div class="container">
+        <div class="header__wp">
+          <div class="header__logo">
+            <img src="./img/svg/logo.svg" alt="" title="">
+          </div>
+          <div class="header__mob js-header-mob">
+            <div class="container">
+              <div class="header__mob-heading">
+                <a href="#" class="header__mob-close js-mob-close">
+                  <img src="./img/svg/close.svg" alt="">
+                </a>
+              </div>
+              <ul class="header__menu">
+                <li class="header__menu-item js-header-action-item has-child">
+                  <a href="#" class="header__menu-item-link js-header-action-item-link">
+                    <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+                    Услуги
+                  </a>
+                  <ul class="header__menu-dropdown js-header-action-item-link-dropdown">
+                    <li class="header__menu-dropdown-item">
+                      <a href="#">Контрактное производство</a>
+                    </li>
+                    <li class="header__menu-dropdown-item">
+                      <a href="#">Изготовление кабельных жгутов и сборок</a>
+                    </li>
+                    <li class="header__menu-dropdown-item">
+                      <a href="#">3D печать</a>
+                    </li>
+                    <li class="header__menu-dropdown-item">
+                      <a href="#">Обработка материалов</a>
+                    </li>
+                    <li class="header__menu-dropdown-item">
+                      <a href="#">Инжиниринговые услуги</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item js-header-action-item">
+                  <a href="#" class="header__menu-item-link js-header-action-item-link">
+                    <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+                    О компании
+                  </a>
+                </li>
+                <li class="header__menu-item js-header-action-item">
+                  <a href="#" class="header__menu-item-link js-header-action-item-link">
+                    <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+                    Новости
+                  </a>
+                </li>
+                <li class="header__menu-item js-header-action-item">
+                  <a href="#" class="header__menu-item-link js-header-action-item-link">
+                    <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+              <div class="header__rightside">
+                <div class="header__contacts">
+                  <a href="tel:+74956447535" class="header__contacts-tel">+7 (495) 644-75-35</a>
+                  <a href="mailto:info@almytech.ru" class="header__contacts-mail">info@almytech.ru</a>
+                </div>
+                <div class="socials">
+                  <a href="#">
+                    <svg class="icon icon-tg"><use xlink:href="#icon-tg"></use></svg>
+                  </a>
+                  <a href="#">
+                    <svg class="icon icon-wa"><use xlink:href="#icon-wa"></use></svg>
+                  </a>
+                </div>
+                <a href="#" class="btn btn--blue">
+                  Отправить заявку
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="burger js-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="wrapper">
