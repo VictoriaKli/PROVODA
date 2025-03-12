@@ -44,11 +44,12 @@
 
 
   <body>
-    <header class="header header--mp js-header">
+    <header class="header js-header">
       <div class="container">
         <div class="header__wp">
           <div class="header__logo">
             <img src="./img/svg/logo.svg" alt="" title="">
+            <img src="./img/svg/logo-black.svg" class="black" alt="" title="">
           </div>
           <div class="header__mob js-header-mob">
             <div class="container">
@@ -130,7 +131,12 @@
 
 
     <div class="wrapper">
-
+      <script>
+        if (window.location.pathname.replace('/','') == "home.html") {
+          $('.header').addClass('header--mp');
+          $('body').addClass('main-page');
+        }
+      </script>
 <section class="homescreen">
     <div class="homescreen__slider swiper js-homescreen-slider">
         <div class="swiper-wrapper">
@@ -645,6 +651,9 @@
       <path d="M31.634 29.166v-1.006h4.937v1.006h-1.829v2.834h-1.28v-2.834h-1.829z"></path>
       <path d="M11.611 28.16v3.84c-0.457 0-0.823 0-1.28 0 0-0.914 0-1.829 0-2.743h-1.646c-0.183 0-0.274 0.091-0.274 0.274l-0.183 1.737c0 0.457-0.457 0.731-1.006 0.731-0.274 0-0.549 0-0.823-0.091 0-0.274 0-0.549 0-0.823h0.366c0.183 0 0.274-0.091 0.274-0.274l0.183-2.103c0-0.366 0.274-0.549 0.64-0.549h3.749z"></path>
       <path d="M25.874 31.269c0-0.823 0-1.646 0-2.377 0-0.549 0.274-0.731 0.731-0.731 1.28 0 2.286 0 3.566 0 0 0.274 0 0.64 0 0.914-1.097 0-1.92 0-3.017 0 0 0.183 0 0.366 0 0.549 1.006 0 1.829 0 2.834 0 0 0.274 0 0.64 0 0.914-1.006 0-1.829 0-2.834 0 0 0.183 0 0.366 0 0.549 1.097 0 1.92 0 3.017 0 0 0.274 0 0.64 0 0.914-1.28 0-2.377 0-3.566 0-0.457 0-0.731-0.274-0.731-0.731z"></path>
+    </symbol>
+    <symbol id="icon-breadcrumb" viewBox="0 0 32 32">
+      <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
     </symbol>
   </defs>
 </svg>

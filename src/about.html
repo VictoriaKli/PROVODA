@@ -1,3 +1,63 @@
 @@include('include/header.html')
-
+<div class="container">
+    <div class="content-entry">
+      <div class="content-entry__wp">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link breadcrumbs__link--main">
+                    Главная
+                  </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    <svg class="icon icon-breadcrumb"><use xlink:href="#icon-breadcrumb"></use></svg>
+                  Услуги
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+<section class="about-homescreen">
+    <div class="about-homescreen__bg">
+        <picture>
+            <source srcset="./img/content/about-homescreen-mob.png" media="(max-width: 768px)">
+            <img src="./img/content/about-homescreen.png" alt="" title="" loading="lazy">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="about-homescreen__wp">
+            <h1>
+                О компании
+            </h1>
+            <div class="about-homescreen__text">
+                Мы специализируемся на производстве кабельных сборок и жгутов с 2011 года, выполняя заказы любой сложности и объема.
+                Наше производство охватывает полный цикл – от разработки до промышленного изготовления.  В нашем штате работают только профессионалы с опытом от 5 лет, что гарантирует высокое качество и оперативность выполнения заказов.
+            </div>
+            <a href="#" class="btn btn--aqua">Оставить заявку</a>
+        </div>
+    </div>
+</section>
+<section class="section section--gray">
+    <div class="container">
+        <div class="company-wp">
+            <div class="company__img">
+                <img src="./img/content/company.png" alt="" title="" loading="lazy">
+            </div>
+            <div class="company__desc">
+                <div class="company__title">
+                    О предприятии
+                </div>
+                <div class="company__text">
+                    Разрабатываем жгуты, кабельные сборки, прилагая конструкторскую документацию. Данные виды работ соответствуют техническим заданию и эскизам.
+                    <br>
+                    <br>
+                    КД на жгуты разрабатывается согласно ГОСТ Р ИСО 9001-2015 (ISO 9001:2015), который применяется к разработке, производству, поставке жгутов и кабельных сборок.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @@include('include/footer.html')

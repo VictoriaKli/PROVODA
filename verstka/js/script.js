@@ -95,7 +95,7 @@ $(document).ready(function () {
   $('.js-burger').click(function (e) {
     e.preventDefault();
     clearHeaderMenuDropdown();
-    body.removeClass('dropdown-open');
+    body.addClass('dropdown-open');
     $('.js-header-mob').addClass('is-open');
   });
   $('.js-mob-close').click(function () {

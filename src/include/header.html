@@ -44,11 +44,12 @@
 
 
   <body>
-    <header class="header header--mp js-header">
+    <header class="header js-header">
       <div class="container">
         <div class="header__wp">
           <div class="header__logo">
             <img src="./img/svg/logo.svg" alt="" title="">
+            <img src="./img/svg/logo-black.svg" class="black" alt="" title="">
           </div>
           <div class="header__mob js-header-mob">
             <div class="container">
@@ -130,3 +131,9 @@
 
 
     <div class="wrapper">
+      <script>
+        if (window.location.pathname.replace('/','') == "home.html") {
+          $('.header').addClass('header--mp');
+          $('body').addClass('main-page');
+        }
+      </script>

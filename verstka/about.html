@@ -44,11 +44,12 @@
 
 
   <body>
-    <header class="header header--mp js-header">
+    <header class="header js-header">
       <div class="container">
         <div class="header__wp">
           <div class="header__logo">
             <img src="./img/svg/logo.svg" alt="" title="">
+            <img src="./img/svg/logo-black.svg" class="black" alt="" title="">
           </div>
           <div class="header__mob js-header-mob">
             <div class="container">
@@ -130,8 +131,73 @@
 
 
     <div class="wrapper">
-
-
+      <script>
+        if (window.location.pathname.replace('/','') == "home.html") {
+          $('.header').addClass('header--mp');
+          $('body').addClass('main-page');
+        }
+      </script>
+<div class="container">
+    <div class="content-entry">
+      <div class="content-entry__wp">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                  <a href="/" class="breadcrumbs__link breadcrumbs__link--main">
+                    Главная
+                  </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    <svg class="icon icon-breadcrumb"><use xlink:href="#icon-breadcrumb"></use></svg>
+                  Услуги
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+<section class="about-homescreen">
+    <div class="about-homescreen__bg">
+        <picture>
+            <source srcset="./img/content/about-homescreen-mob.png" media="(max-width: 768px)">
+            <img src="./img/content/about-homescreen.png" alt="" title="" loading="lazy">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="about-homescreen__wp">
+            <h1>
+                О компании
+            </h1>
+            <div class="about-homescreen__text">
+                Мы специализируемся на производстве кабельных сборок и жгутов с 2011 года, выполняя заказы любой сложности и объема.
+                Наше производство охватывает полный цикл – от разработки до промышленного изготовления.  В нашем штате работают только профессионалы с опытом от 5 лет, что гарантирует высокое качество и оперативность выполнения заказов.
+            </div>
+            <a href="#" class="btn btn--aqua">Оставить заявку</a>
+        </div>
+    </div>
+</section>
+<section class="section section--gray">
+    <div class="container">
+        <div class="company-wp">
+            <div class="company__img">
+                <img src="./img/content/company.png" alt="" title="" loading="lazy">
+            </div>
+            <div class="company__desc">
+                <div class="company__title">
+                    О предприятии
+                </div>
+                <div class="company__text">
+                    Разрабатываем жгуты, кабельные сборки, прилагая конструкторскую документацию. Данные виды работ соответствуют техническим заданию и эскизам.
+                    <br>
+                    <br>
+                    КД на жгуты разрабатывается согласно ГОСТ Р ИСО 9001-2015 (ISO 9001:2015), который применяется к разработке, производству, поставке жгутов и кабельных сборок.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
 
 <footer class="footer">
@@ -262,6 +328,9 @@
       <path d="M31.634 29.166v-1.006h4.937v1.006h-1.829v2.834h-1.28v-2.834h-1.829z"></path>
       <path d="M11.611 28.16v3.84c-0.457 0-0.823 0-1.28 0 0-0.914 0-1.829 0-2.743h-1.646c-0.183 0-0.274 0.091-0.274 0.274l-0.183 1.737c0 0.457-0.457 0.731-1.006 0.731-0.274 0-0.549 0-0.823-0.091 0-0.274 0-0.549 0-0.823h0.366c0.183 0 0.274-0.091 0.274-0.274l0.183-2.103c0-0.366 0.274-0.549 0.64-0.549h3.749z"></path>
       <path d="M25.874 31.269c0-0.823 0-1.646 0-2.377 0-0.549 0.274-0.731 0.731-0.731 1.28 0 2.286 0 3.566 0 0 0.274 0 0.64 0 0.914-1.097 0-1.92 0-3.017 0 0 0.183 0 0.366 0 0.549 1.006 0 1.829 0 2.834 0 0 0.274 0 0.64 0 0.914-1.006 0-1.829 0-2.834 0 0 0.183 0 0.366 0 0.549 1.097 0 1.92 0 3.017 0 0 0.274 0 0.64 0 0.914-1.28 0-2.377 0-3.566 0-0.457 0-0.731-0.274-0.731-0.731z"></path>
+    </symbol>
+    <symbol id="icon-breadcrumb" viewBox="0 0 32 32">
+      <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
     </symbol>
   </defs>
 </svg>
